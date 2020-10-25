@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/examples/Header";
+import Header from "../examples/Header";
 import HeaderStatic from "../components/HeaderStatic";
 import Layout from "../components/Layout";
 
