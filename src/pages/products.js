@@ -1,9 +1,8 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import styles from "../components/products.module.css";
 import Image from "gatsby-image";
-import { Link } from "gatsby";
 
 const ComponentName = ({ data }) => {
   const {
@@ -14,7 +13,6 @@ const ComponentName = ({ data }) => {
     <Layout>
       <section className={styles.page}>
         {products.map(product => {
-          console.log(product);
           return (
             <article key={product.id}>
               <Image fluid={product.image.fluid} alt={product.title}></Image>
